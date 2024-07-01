@@ -1,0 +1,8 @@
+<li>
+  <a 
+    href="{{ url }}" 
+    class="block w-full pl-10 md:px-15 py-6 hover:text-navy hover:md:text-scarlett transition-all {{ is_current || is_parent ? 'text-navy md:text-scarlett' : '' }}"
+    title="{{ title }}">
+    {{ title | replace(' ', '&nbsp;') }}
+  </a>
+</li>

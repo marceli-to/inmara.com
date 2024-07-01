@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-3dd86194.css",
+    "file": "assets/app-24a2f4de.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -24,5 +24,9 @@
     "file": "assets/app-350ff511.js",
     "isEntry": true,
     "src": "resources/js/app.js"
+  },
+  "resources/patterns/pattern-top.png": {
+    "file": "assets/pattern-top-dcc3d506.png",
+    "src": "resources/patterns/pattern-top.png"
   }
 }

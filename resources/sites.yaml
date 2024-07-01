@@ -2,11 +2,11 @@ de:
   name: Deutsch
   locale: de
   url: '{{ config:app:url }}'
-en:
-  name: English
-  url: '{{ config:app:url }}/en'
-  locale: en
 fr:
   name: Francais
   url: '{{ config:app:url }}/fr'
   locale: fr
+en:
+  name: English
+  url: '{{ config:app:url }}/en'
+  locale: en

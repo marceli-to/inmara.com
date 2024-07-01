@@ -31,16 +31,15 @@ export default {
       },
 
       fontSize: {
-        'tiny': '0.9375rem',    // 15px
-        'xxxs': '1rem',         // 16px
-        'xxs':  '1.25rem',      // 20px
-        'xs':  '1.375rem',      // 22px
-        'sm':  '1.5625rem',    // 25px
-        'md':  '1.875rem',     // 30px
-        'lg':  '2.1875rem',    // 35px
+        'xs':  '0.9375rem',    // 15px
+        'sm':  '1rem',         // 16px
+        'md':  '1.125rem',     // 18px
+        'lg':  '1.5rem',       // 24px
         'xl':  '2.5rem',       // 40px
-        '2xl': '3.125rem',    // 50px
-        '3xl': '3.75rem',     // 60px
+      },
+
+      textDecorationThickness: {
+        3: '3px',
       },
       
       zIndex: {

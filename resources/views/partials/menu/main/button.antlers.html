@@ -1,0 +1,13 @@
+<a 
+  href="javascript:;" 
+  x-on:click="menu = !menu;"
+  title="Menü anzeigen"
+  :class="{ 'is-active': menu === true }"
+  class="w-40 h-38 flex justify-center items-center {{ class }}">
+  <span x-show="menu === false">
+    {{ partial:icons/burger class="w-32 h-auto" }}
+  </span>
+  <span x-cloak x-show="menu === true">
+    {{ partial:icons/cross class="w-27 h-auto" }}
+  </span>
+</a>

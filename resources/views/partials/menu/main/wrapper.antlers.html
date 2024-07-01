@@ -1,0 +1,20 @@
+{{ partial:menu/main/button class="md:hidden" }}
+<div 
+  x-cloak 
+  x-show="menu"
+  x-transition:enter="transition ease-in duration-100"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="transition ease-in duration-0"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+  class="bg-white md:bg-transparent fixed md:relative w-full md:!flex md:items-end md:justify-between left-0 px-20 top-130 md:top-0 z-80">
+  <nav class="text-sm">
+    <ul class="flex flex-col md:flex-row space-y-20 md:space-y-0 md:space-x-30">
+      {{ nav:main }}
+        {{ partial:menu/main/items/main }}
+      {{ /nav:main }}
+    </ul>
+  </nav>
+  {{ partial:menu/language/wrapper }}
+</div>

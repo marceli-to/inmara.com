@@ -1,0 +1,27 @@
+@import "typo/webfonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { display: none !important; }
+
+/* Global styles */
+main {
+  @apply flex-1;
+}
+
+main p {
+}
+
+main p:last-child {
+}
+
+main ul {
+  @apply list-disc list-inside m-0;
+}
+
+main ul p {
+  @apply mb-0 inline;
+}
+

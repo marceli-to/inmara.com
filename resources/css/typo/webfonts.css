@@ -1,0 +1,20 @@
+/**
+ * Typography - Webfonts
+ * -----------------------------------------------------------------------------
+ */
+
+@font-face {
+  font-family: 'GT-Alpina-Standard-Regular';
+  src: url('fonts/GT-Alpina-Standard-Regular.woff2') format('woff2'), url('fonts/GT-Alpina-Standard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT-Alpina-Standard-Light';
+  src: url('fonts/GT-Alpina-Standard-Light.woff2') format('woff2'), url('fonts/GT-Alpina-Standard-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

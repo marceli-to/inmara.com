@@ -1,0 +1,21 @@
+title: Bild
+fields:
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Bild
+  -
+    handle: show_caption
+    field:
+      type: toggle
+      display: 'Bildlegende?'
+  -
+    handle: caption
+    field:
+      type: text
+      display: Legende
+      if:
+        show_caption: 'equals true'

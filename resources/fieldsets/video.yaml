@@ -1,0 +1,11 @@
+title: Video
+fields:
+  -
+    handle: video
+    field:
+      container: assets
+      type: assets
+      display: Video
+      instructions: 'Format MP4'
+      instructions_position: below
+      max_files: 1

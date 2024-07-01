@@ -1,0 +1,28 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-3dd86194.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/fonts/GT-Alpina-Standard-Light.woff": {
+    "file": "assets/GT-Alpina-Standard-Light-43d64b11.woff",
+    "src": "resources/css/fonts/GT-Alpina-Standard-Light.woff"
+  },
+  "resources/css/fonts/GT-Alpina-Standard-Light.woff2": {
+    "file": "assets/GT-Alpina-Standard-Light-0611c409.woff2",
+    "src": "resources/css/fonts/GT-Alpina-Standard-Light.woff2"
+  },
+  "resources/css/fonts/GT-Alpina-Standard-Regular.woff": {
+    "file": "assets/GT-Alpina-Standard-Regular-2bf9958f.woff",
+    "src": "resources/css/fonts/GT-Alpina-Standard-Regular.woff"
+  },
+  "resources/css/fonts/GT-Alpina-Standard-Regular.woff2": {
+    "file": "assets/GT-Alpina-Standard-Regular-58b3c5d5.woff2",
+    "src": "resources/css/fonts/GT-Alpina-Standard-Regular.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-350ff511.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}

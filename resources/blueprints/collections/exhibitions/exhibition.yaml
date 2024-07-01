@@ -1,0 +1,138 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: is_current
+            field:
+              type: toggle
+              display: 'Aktuell?'
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: date_location
+            field:
+              type: textarea
+              display: 'Datum, Ort'
+          -
+            handle: info
+            field:
+              buttons:
+                - removeformat
+                - anchor
+              toolbar_mode: floating
+              remove_empty_nodes: true
+              type: bard
+              display: Informationen
+          -
+            handle: text
+            field:
+              buttons:
+                - unorderedlist
+                - removeformat
+                - anchor
+              toolbar_mode: floating
+              remove_empty_nodes: true
+              type: bard
+              display: 'Weitere Informationen'
+              container: assets
+              if:
+                is_current: 'equals true'
+          -
+            handle: links
+            field:
+              buttons:
+                - removeformat
+                - anchor
+              toolbar_mode: floating
+              remove_empty_nodes: true
+              type: bard
+              display: Links
+              if:
+                is_current: 'equals true'
+          -
+            handle: image_portrait
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Bild hochformat (Desktop)'
+              width: 50
+              if:
+                is_current: 'equals true'
+          -
+            handle: image_landscape
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Bild querformat (Mobile)'
+              width: 50
+              if:
+                is_current: 'equals true'
+          -
+            handle: images_left
+            field:
+              type: replicator
+              display: 'Bilder links'
+              width: 50
+              unless:
+                is_current: 'equals true'
+              sets:
+                images:
+                  display: Bilder
+                  icon: media-image-picture-orientation
+                  sets:
+                    image:
+                      display: Bild
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: image
+          -
+            handle: images_right
+            field:
+              type: replicator
+              display: 'Bilder rechts'
+              width: 50
+              unless:
+                is_current: 'equals true'
+              sets:
+                images:
+                  display: Bilder
+                  icon: media-image-picture-orientation
+                  sets:
+                    image:
+                      display: Bild
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: image
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - exhibitions
+              max_items: 1
+              listable: false
+              localizable: true
+title: Ausstellungen

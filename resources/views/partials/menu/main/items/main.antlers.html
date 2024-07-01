@@ -1,14 +1,14 @@
 <li class="md:relative group font-roboto-bold font-bold text-scarlett">
   <a 
     href="{{ url }}" 
-    class="block leading-none no-underline text-sm group-hover:underline underline-offset-4 decoration-2 md:decoration-3 transition-all {{ is_current || is_parent ? '!underline' : '' }}"
+    class="block leading-none no-underline text-sm group-hover:underline underline-offset-6 decoration-2 md:decoration-3 transition-all {{ is_current || is_parent ? '!underline' : '' }}"
     target="{{ is_external ? '_blank' : '_self' }}"
     title="{{ title }}">
     {{ title }}
   </a>
   {{ if children }}
-  <div class="md:absolute md:hidden group-hover:md:!block md:top-0 md:-left-15">
-    <ul class="mt-15 mb-0 md:mt-30 md:py-10  md:bg-navy md:text-white">
+  <div class="md:absolute md:hidden group-hover:md:!block md:top-18 md:-left-15">
+    <ul class="mt-15 md:mt-10 mb-0 md:py-10  md:bg-navy md:text-white">
       {{ children }}
         {{ partial:menu/main/items/child }}
       {{ /children }}

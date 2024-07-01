@@ -1,3 +1,15 @@
 {{ if type == 'editor' }}
   {{ partial:elements/editor }}
 {{ /if }}
+
+{{ if type == 'news' }}
+  {{ partial:elements/news }}
+{{ /if }}
+
+{{ if type == 'header_visual' }}
+  {{ partial:elements/visual }}
+{{ /if }}
+
+{{ if type == 'teaser_product' }}
+  {{ partial:products/teaser }}
+{{ /if }}

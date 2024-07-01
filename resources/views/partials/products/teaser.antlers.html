@@ -1,0 +1,49 @@
+<section class="inner mb-32 lg:mb-44">
+  <article class="flex flex-col md:grid md:grid-cols-12">
+
+    {{ if teaser_type == 'text_image' }}
+      <div class="order-2 md:order-1 md:col-span-6 bg-navy text-white hyphens-auto p-20 lg:p-36">
+        {{ partial:partials/headings/h2 title="{{ title }}" class="text-lg mb-12 lg:mb-16" }}
+        {{ text }}
+        {{ if link }}
+          <div class="mt-12 lg:mt-16">
+            {{ partial:buttons/primary 
+              :link="link" 
+              :linkText="link_text"
+              class="bg-scarlett text-white hover:bg-white hover:text-navy transition-all" }}
+          </div>
+        {{ /if }}
+      </div>
+      <div class="order-1 md:order-2 md:col-span-6 relative">
+        {{ partial:media/image 
+          :image="image" 
+          class="w-full h-auto sm:h-full md:absolute object-cover aspect-[16/6] md:aspect-auto"
+          :sizes="['lg']"
+          preset="focal-16-9" }}
+      </div>
+    {{ /if }}
+
+    {{ if teaser_type == 'image_text' }}
+      <div class="order-2 md:col-span-6 bg-navy text-white hyphens-auto p-20 lg:p-36">
+        {{ partial:partials/headings/h2 title="{{ title }}" class="text-lg mb-12 lg:mb-16" }}
+        {{ text }}
+        {{ if link }}
+          <div class="mt-12 lg:mt-16">
+            {{ partial:buttons/primary 
+              :link="link" 
+              :linkText="link_text"
+              class="bg-scarlett text-white hover:bg-white hover:text-navy transition-all" }}
+          </div>
+        {{ /if }}
+      </div>
+      <div class="order-1 md:col-span-6 relative">
+        {{ partial:media/image 
+          :image="image" 
+          class="w-full h-auto sm:h-full md:absolute object-cover aspect-[16/6] md:aspect-auto"
+          :sizes="['lg']"
+          preset="focal-16-9" }}
+      </div>
+    {{ /if }}
+
+  </article>
+</section>

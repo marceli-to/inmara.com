@@ -44,3 +44,7 @@ footer a {
   @apply no-underline hover:underline underline-offset-2
 }
 
+.inner {
+  @apply max-w-5xl mx-auto w-full px-15;
+}
+

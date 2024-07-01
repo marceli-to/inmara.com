@@ -21,6 +21,7 @@ tabs:
               type: replicator
               display: Inhalte
               collapse: true
+              localizable: true
               sets:
                 main_elements:
                   display: Hauptelemente
@@ -33,13 +34,35 @@ tabs:
                       fields:
                         -
                           import: editor
+                    header_visual:
+                      display: Visual
+                      instructions: 'Visual für Seitenheader'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: header_visual
                 special_elements:
                   display: Spezialelemente
                   icon: addon-boxes-stack
                   sets:
-                    neues_set:
-                      display: 'Neues Set'
-                      fields: {  }
+                    news:
+                      display: News
+                      instructions: 'Newsartikel für Startseite'
+                      icon: text-formatting-wrap-image-right
+                      fields:
+                        -
+                          import: news
+                products:
+                  display: Produkte
+                  icon: addon-boxes-stack
+                  sets:
+                    teaser_product:
+                      display: Produkteteaser
+                      instructions: 'Produkteteaser für Startseite.'
+                      icon: text-formatting-wrap-image-right
+                      fields:
+                        -
+                          import: teaser_product
   seo:
     display: SEO
     sections:

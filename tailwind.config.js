@@ -38,6 +38,10 @@ export default {
         'xl':  '2.5rem',       // 40px
       },
 
+      textUnderlineOffset: {
+        6: '6px',
+      },
+
       textDecorationThickness: {
         3: '3px',
       },

@@ -1,0 +1,36 @@
+title: News
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      localizable: true
+  -
+    handle: lead
+    field:
+      type: textarea
+      display: Lead
+      localizable: true
+  -
+    handle: text
+    field:
+      buttons:
+        - bold
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - anchor
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      type: bard
+      display: Text
+      localizable: true
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+      localizable: false

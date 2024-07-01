@@ -1,0 +1,50 @@
+title: Produkteteaser
+fields:
+  -
+    handle: teaser_type
+    field:
+      options:
+        image_text: Image/Text
+        text_image: Text/Image
+      default: text_image
+      type: select
+      display: Type
+      localizable: false
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      localizable: true
+      validate:
+        - required
+  -
+    handle: text
+    field:
+      type: textarea
+      display: Text
+      localizable: true
+  -
+    handle: link
+    field:
+      type: link
+      display: Link
+      localizable: false
+      width: 50
+  -
+    handle: link_text
+    field:
+      type: text
+      display: 'Link Text'
+      localizable: true
+      width: 50
+      if:
+        link: 'not null'
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+      localizable: false

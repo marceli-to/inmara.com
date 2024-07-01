@@ -32,3 +32,15 @@ main ul p {
   @apply mb-0 inline;
 }
 
+strong {
+  @apply font-roboto-bold font-bold
+}
+
+address {
+  @apply font-roboto-light font-light not-italic
+}
+
+footer a {
+  @apply no-underline hover:underline underline-offset-2
+}
+

@@ -1,5 +1,45 @@
-<footer>
-  
+<div class="bg-[url(../patterns/pattern-bottom.png)] min-h-[120px] w-full">&nbsp;</div>
+<footer class="bg-navy text-white leading-[1.4]  py-20 lg:py-30">
+  <div class="max-w-5xl mx-auto w-full px-15 sm:grid sm:grid-cols-12">
+    <div class="sm:col-span-6">
+      <strong>Inmara</strong>
+      <div class="sm:flex sm:space-x-30 lg:space-x-50">
+        <address class="mb-20 sm:mb-0">
+          Witzbergstrasse 23<br>
+          8330 Pfäffikon ZH<br>
+          Switzerland
+        </address>
+        <div class="mb-20 sm:mb-0">
+          <a href="tel:+41 44 951 10 50">+41 44 951 10 50</a><br>
+          <a href="https://www.inmara.com">www.inmara.com</a><br>
+          <a href="mailto:info@inmara.com">info@inmara.com</a>
+        </div>
+      </div>
+    </div>
+    <nav class="sm:col-span-6 sm:flex sm:justify-end">
+      <ul>
+        {{ nav:footer }}
+          <li>
+            <a 
+              href="{{ url }}"
+              class="{{ first ? 'font-roboto-bold font-bold' : ''}}"
+              title="{{ title }}">
+              {{ title }}
+            </a>
+          </li>
+        {{ /nav:footer }}
+        <li>
+          <a 
+            href="https://stoz.ch"
+            class=""
+            target="_blank"
+            title="Design by stoz">
+            Design by stoz
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </footer>
 {{ vite src="resources/js/app.js" }}
 {{ livewire:scripts }}

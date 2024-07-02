@@ -45,6 +45,6 @@ footer a {
 }
 
 .inner {
-  @apply max-w-5xl mx-auto w-full px-15;
+  @apply max-w-5xl mx-auto w-full px-16;
 }
 

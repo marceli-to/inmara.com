@@ -41,6 +41,13 @@ tabs:
                       fields:
                         -
                           import: header_visual
+                    team_member:
+                      display: Teammitglied
+                      instructions: 'Teammitglied hinzufügen.'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: team_member
                 special_elements:
                   display: Spezialelemente
                   icon: addon-boxes-stack

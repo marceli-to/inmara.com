@@ -1,0 +1,50 @@
+title: Teammitglied
+fields:
+  -
+    handle: image_type
+    field:
+      options:
+        image_text: Image/Text
+        text_image: Text/Image
+      default: text_image
+      type: select
+      display: Type
+      localizable: false
+  -
+    handle: name
+    field:
+      type: text
+      display: Name
+      localizable: false
+      validate:
+        - required
+  -
+    handle: position
+    field:
+      type: text
+      display: Position
+      localizable: false
+  -
+    handle: quote
+    field:
+      type: textarea
+      display: Quote
+      localizable: false
+  -
+    handle: image_landscape
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Image (Landscape)'
+      localizable: false
+      width: 50
+  -
+    handle: image_portrait
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Image (Portrait)'
+      localizable: false
+      width: 50

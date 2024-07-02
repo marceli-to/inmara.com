@@ -48,6 +48,19 @@ tabs:
                       fields:
                         -
                           import: team_member
+                    about_item:
+                      display: 'Über uns'
+                      instructions: 'Über uns Element hinzufügen'
+                      icon: text-formatting-image-left
+                      fields:
+                        -
+                          import: about_item
+                    contact_items:
+                      display: Kontakt
+                      icon: dashboard-layout
+                      fields:
+                        -
+                          import: contact_items
                 special_elements:
                   display: Spezialelemente
                   icon: addon-boxes-stack

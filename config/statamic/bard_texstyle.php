@@ -43,6 +43,16 @@ return [
           'cp_badge' => false,
         ],
 
+        'highlight' => [
+          'type' => 'span',
+          'name' => 'Highlight',
+          'ident' => 'H',
+          'icon' => null,
+          'class' => 'highlight',
+          'cp_css' => 'color: red',
+          'cp_badge' => false,
+        ],
+
         // 'brand' => [
         //     'type' => 'span',
         //     'name' => 'Brand Text',

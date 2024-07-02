@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-cd44c35e.css",
+    "file": "assets/app-dc83dc4f.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -20,8 +20,12 @@
     "file": "assets/GT-Alpina-Standard-Regular-58b3c5d5.woff2",
     "src": "resources/css/fonts/GT-Alpina-Standard-Regular.woff2"
   },
+  "resources/icons/marker.svg": {
+    "file": "assets/marker-20651951.svg",
+    "src": "resources/icons/marker.svg"
+  },
   "resources/js/app.js": {
-    "file": "assets/app-350ff511.js",
+    "file": "assets/app-d778dcbe.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },

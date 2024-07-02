@@ -1,0 +1,26 @@
+<section>
+  <article class="inner">
+    <div class="sm:grid sm:grid-cols-12 sm:gap-x-16 lg:gap-x-24">
+      {{ if address_left }}
+        <address class="sm:col-span-6 mb-32 sm:mb-0">
+          {{ address_left }}
+        </address>
+      {{ /if }}
+      {{ if address_right }}
+        <address class="sm:col-span-6">
+          {{ address_right }}
+        </address>
+      {{ /if }}
+    </div>
+  </article>
+  <article class="inner mt-32 lg:mt-48">
+    <div class="sm:grid sm:grid-cols-12 sm:gap-x-16 lg:gap-x-24">
+      <div class="sm:col-span-6 mb-32 sm:mb-0">
+        <div class="min-h-[240px] md:min-h-[400px]" id="map-pfaeffikon"></div>
+      </div>
+      <div class="sm:col-span-6">
+        <div class="min-h-[240px] md:min-h-[400px]" id="map-strijen"></div>
+      </div>
+    </div>
+  </article>
+</section>

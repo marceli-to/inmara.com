@@ -25,6 +25,9 @@
 <meta name="theme-color" content="#ffffff">
 {{ vite src="resources/css/app.css" }}
 {{ livewire:styles }}
+{{ if has_maps }}
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+{{ /if }}
 </head>
 {{ if debug }}
   {{ partial:layout/debug }}

@@ -5,13 +5,30 @@ fields:
     field:
       type: toggle
       display: Debug
+      localizable: false
+  -
+    handle: has_maps
+    field:
+      type: toggle
+      display: 'Maps?'
+      localizable: false
+  -
+    handle: page_class
+    field:
+      options:
+        contact: Contact
+      type: select
+      display: 'Page class'
+      localizable: false
   -
     handle: template
     field:
       type: template
       display: Template
+      localizable: false
   -
     handle: layout
     field:
       type: template
       display: Layout
+      localizable: false

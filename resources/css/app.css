@@ -19,9 +19,11 @@ main {
 }
 
 main p {
+  @apply mb-12 lg:mb-20
 }
 
 main p:last-child {
+  @apply !mb-0
 }
 
 main ul {
@@ -48,3 +50,33 @@ footer a {
   @apply max-w-5xl mx-auto w-full px-16;
 }
 
+.highlight {
+  @apply text-scarlett
+}
+
+/* Page classes */
+body.contact address {
+  @apply not-italic leading-[1.4]
+}
+
+body.contact address a {
+  @apply no-underline hover:underline underline-offset-4
+}
+
+body.contact h2 {
+  @apply font-roboto-bold font-bold text-3xl text-navy mb-8 lg:mb-16
+}
+
+body.contact h3 {
+  @apply font-roboto-bold font-bold text-navy
+}
+
+/* Mapbox */
+.marker {
+  background-image: url('../icons/marker.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 40px;
+  width: 30px;
+}

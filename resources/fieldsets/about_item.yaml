@@ -1,2 +1,47 @@
 title: 'Über uns'
-fields: {  }
+fields:
+  -
+    handle: icon
+    field:
+      options:
+        mission-statement: Leitbild
+        target: Ziel
+        history: Firmengeschichte
+      type: select
+      display: Icon
+      localizable: false
+      width: 50
+  -
+    handle: theme
+    field:
+      options:
+        dark: Dark
+        light: Light
+      default: light
+      type: select
+      display: Theme
+      localizable: false
+      width: 50
+  -
+    handle: title
+    field:
+      type: textarea
+      display: Title
+      localizable: false
+  -
+    handle: text
+    field:
+      buttons:
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+        - highlight
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      link_collections:
+        - pages
+      container: assets
+      type: bard
+      display: Text
+      localizable: false

@@ -1,0 +1,27 @@
+title: Downloads
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      localizable: false
+      validate:
+        - required
+  -
+    handle: download
+    field:
+      type: replicator
+      display: Download
+      localizable: false
+      sets:
+        download:
+          display: Download
+          icon: download-arrow-down
+          sets:
+            download:
+              display: Download
+              icon: download-arrow-down
+              fields:
+                -
+                  import: file_protected

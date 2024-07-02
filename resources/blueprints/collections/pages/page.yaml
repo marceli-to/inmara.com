@@ -78,6 +78,12 @@ tabs:
                       fields:
                         -
                           import: file_protected
+                    downloads:
+                      display: Downloads
+                      icon: download-arrow-down
+                      fields:
+                        -
+                          import: downloads
                 products:
                   display: Produkte
                   icon: addon-boxes-stack

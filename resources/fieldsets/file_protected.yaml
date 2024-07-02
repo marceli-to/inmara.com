@@ -1,6 +1,14 @@
 title: 'File (protected)'
 fields:
   -
+    handle: title
+    field:
+      type: text
+      display: Title
+      localizable: false
+      validate:
+        - required
+  -
     handle: file
     field:
       container: assets

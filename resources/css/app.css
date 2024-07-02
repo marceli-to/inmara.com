@@ -47,7 +47,7 @@ footer a {
 }
 
 .inner {
-  @apply max-w-5xl mx-auto w-full px-16;
+  @apply max-w-5xl mx-auto w-full px-16 sm:px-24;
 }
 
 .highlight {
@@ -63,12 +63,32 @@ body.contact address a {
   @apply no-underline hover:underline underline-offset-4
 }
 
-body.contact h2 {
-  @apply font-roboto-bold font-bold text-3xl text-navy mb-8 lg:mb-16
+body.contact main h2 {
+  @apply font-roboto-bold font-bold text-lg text-navy mb-8 lg:mb-16
 }
 
-body.contact h3 {
+body.contact main h3 {
   @apply font-roboto-bold font-bold text-navy
+}
+
+body.privacy main {
+  @apply pt-16 lg:pt-32 lg:pb-32
+}
+
+body.privacy main .inner {
+  @apply !mb-0
+}
+
+body.privacy main h2 {
+  @apply font-roboto-bold font-bold text-lg text-navy mb-8 lg:mb-16
+}
+
+body.privacy main h3 {
+  @apply font-roboto-bold font-bold text-navy
+}
+
+body.privacy main ul {
+  @apply mb-8 lg:mb-16
 }
 
 /* Mapbox */

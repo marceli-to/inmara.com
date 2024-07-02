@@ -1,0 +1,32 @@
+<div data-download-index="{{ index }}" class="relative mb-16 scroll-mt-[200px]">
+  <button 
+    type="button" 
+    class="bg-navy text-white w-full p-8 md:p-12 text-left"
+    @click="selected !== {{ index }} ? selected = {{ index }} : selected = null; setTimeout(() => { document.querySelector('[data-download-index=\'{{ index }}\']').scrollIntoView()}, 15);">
+    <div class="flex items-center justify-between">
+      <div class="font-roboto-bold font-bold text-sm">{{ title }} ({{ download | count }})</div>
+      <template x-if="selected !== {{ index }}">
+        <x-icons.chevron-up class="text-black" />
+        {{ partial:icons/chevron-up class="text-white" }}
+      </template>
+      <template x-if="selected === {{ index }}">
+        {{ partial:icons/chevron-down class="text-white" }}
+      </template>
+    </div>
+  </button>
+  <div 
+    class="relative overflow-hidden max-h-0"
+    x-ref="container{{ index }}" 
+    x-bind:style="selected == '{{ index }}' ? 'max-height: ' + $refs.container{{ index }}.scrollHeight + 'px;' : ''">
+    {{ download }}
+      <div class="my-8">
+        {{ if type == 'download' }}
+          <a href="/download/{{ file.filename }}.{{ file.extension }}" class="block p-8 md:p-12 text-xs md:text-sm bg-gray-100 hover:bg-gray-200 transition-all">
+            {{ title }}
+          </a>
+        {{ /if }}
+      </div>
+    {{ /download }}
+  </div>
+</div>
+

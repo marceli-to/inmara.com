@@ -17,6 +17,7 @@ fields:
     field:
       options:
         contact: Contact
+        privacy: Privacy
       type: select
       display: 'Page class'
       localizable: false

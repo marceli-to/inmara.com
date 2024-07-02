@@ -4,11 +4,13 @@
       {{ partial:auth/logout }}
     </div>
     {{ partial:partials/headings/h1 title="{{ title }}" class="text-2xl mb-20 lg:mb-32 text-scarlett" }}
-    {{ page_elements }}
-      {{ if type == 'file_protected' }}
-        <a href="/download/{{ file.filename }}.{{ file.extension }}">Download PDF</a>
-      {{ /if }}
-    {{ /page_elements }}
+    <div x-data="{ selected: 0 }">
+      {{ page_elements }}
+        {{ if type == 'downloads' }}
+          {{ partial:elements/downloads }}
+        {{ /if }}
+      {{ /page_elements }}
+    </div>
   </article>
 </section>
 

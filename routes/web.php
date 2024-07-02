@@ -1,5 +1,7 @@
 <?php
-
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\DownloadController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,13 +14,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::post('login', [LoginController::class, 'login'])->name('login');
+Route::post('logout', [LogoutController::class, 'logout'])->name('logout');
+Route::get('download/{assetId}', [DownloadController::class, 'download'])->middleware('auth')->name('download.file');
 
-// Route::statamic('/werkarchiv/{slug}', 'project.show', [
-//   'layout' => 'layout.default',
-//   'title' => 'Werkarchiv',
-// ]);
-
-Route::statamic('/werkarchiv/kategorie/{category?}', 'project.archive', [
+Route::statamic('login', 'auth.login', [
+  'title' => 'Login',
   'layout' => 'layout.default',
-  'title' => 'Werkarchiv',
 ]);

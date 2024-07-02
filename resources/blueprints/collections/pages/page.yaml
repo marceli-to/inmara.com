@@ -59,6 +59,12 @@ tabs:
                       fields:
                         -
                           import: news
+                    file_protected:
+                      display: 'File (Download, geschützt)'
+                      icon: login-key-2
+                      fields:
+                        -
+                          import: file_protected
                 products:
                   display: Produkte
                   icon: addon-boxes-stack

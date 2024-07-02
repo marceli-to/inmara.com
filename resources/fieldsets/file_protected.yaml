@@ -1,0 +1,11 @@
+title: 'File (protected)'
+fields:
+  -
+    handle: file
+    field:
+      container: assets
+      folder: downloads
+      type: assets
+      display: File
+      localizable: false
+      max_files: 1

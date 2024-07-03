@@ -83,33 +83,61 @@ tabs:
                   icon: addon-boxes-stack
                   sets:
                     teaser_product:
-                      display: 'Teaser Produkt'
+                      display: 'Teaser (Startseite)'
                       instructions: 'Produkteteaser für Startseite.'
                       icon: text-formatting-wrap-image-right
                       fields:
                         -
                           import: teaser_product
+                    teasers_product:
+                      display: 'Teaser (Übersicht)'
+                      instructions: 'Produkteaser für Übersichtsseite hinzufügen'
+                      icon: layout-grid-dots
+                      fields:
+                        -
+                          import: teasers_product
+                    product_category_title:
+                      display: 'Kategorietitel (Detailseite)'
+                      instructions: 'Produktkategorie für Detailseite'
+                      icon: text-formatting-shadow-text
+                      fields:
+                        -
+                          import: product_category_title
                     anchor_menu_products:
-                      display: 'Ankermenu Produkte'
+                      display: 'Ankermenü (Übersicht)'
                       instructions: 'Ankermenü auf Produktseite hinzufügen.'
                       icon: link
                       fields:
                         -
                           import: anchor_menu_product
+                    menu_products:
+                      display: 'Menü (Übersicht/Detail)'
+                      instructions: 'Produktemenü hinzufügen'
+                      icon: link
+                      fields:
+                        -
+                          import: menu_products
                     editor_product:
-                      display: 'Editor Produkte'
+                      display: Editor
                       instructions: 'Editor für Produktinformationen'
                       icon: text-formatting-markdown
                       fields:
                         -
                           import: editor_product
                     text_media_product:
-                      display: 'Text/Media Produkte'
+                      display: 'Text/Media (Übersicht)'
                       instructions: 'Text/Medien Element hinzufügen'
                       icon: media-news-paper
                       fields:
                         -
                           import: text_media_product
+                    product_detail:
+                      display: 'Produkt (Detail)'
+                      instructions: 'Produktdetailseite hinzufügen'
+                      icon: text-formatting-wrap-image-right
+                      fields:
+                        -
+                          import: product_detail
   seo:
     display: SEO
     sections:

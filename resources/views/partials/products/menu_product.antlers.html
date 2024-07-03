@@ -1,0 +1,11 @@
+<section class="inner mb-32 lg:mb-48">
+  <article class="flex flex-wrap gap-8 md:gap-12">
+    {{ nav:navigation }}
+        <a 
+        href="{{ url }}" 
+        class="inline-block font-roboto-bold font-bold leading-none text-white hover:bg-navy {{ is_current ? 'bg-navy' : 'bg-scarlett' }} transition-all px-12 py-8">
+        {{ title }}
+      </a>
+    {{ /nav:navigation }}
+  </article>
+</section>

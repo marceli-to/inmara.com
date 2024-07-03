@@ -13,7 +13,7 @@
               link="{{ link }}" 
               link_text="{{ text }}"
               target="_blank"
-              class="mt-8 sm:mt-0 text-white bg-scarlett hover:bg-navy transition-all"}}
+              class="mt-8 sm:mt-0 text-white bg-scarlett {{ theme == 'dark' ? 'hover:bg-white hover:text-navy' : 'hover:bg-navy' }} transition-all"}}
           {{ /if }}
         {{ /editor }}
       </div>

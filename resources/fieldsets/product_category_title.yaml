@@ -1,0 +1,8 @@
+title: 'Product Category Title'
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      localizable: false

@@ -1,0 +1,27 @@
+title: 'Product Detail'
+fields:
+  -
+    import: editor_product
+  -
+    handle: images
+    field:
+      type: replicator
+      display: Images
+      localizable: false
+      sets:
+        image:
+          display: Bild
+          icon: media-image-picture-orientation
+          sets:
+            image:
+              display: Bild
+              icon: media-image-picture-orientation
+              fields:
+                -
+                  import: image
+                -
+                  handle: caption
+                  field:
+                    type: text
+                    display: Caption
+                    localizable: false

@@ -1,0 +1,9 @@
+title: 'Product Menu'
+fields:
+  -
+    handle: navigation
+    field:
+      max_items: 1
+      type: navs
+      display: Elemente
+      localizable: false

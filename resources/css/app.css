@@ -59,16 +59,17 @@ body.product main h3 {
   @apply font-roboto-bold font-bold text-md text-navy mb-8 lg:mb-12
 }
 
-body.product main .product-text-media h3 {
+body.product main .product-text-media h3,
+body.product main .product-detail h3 {
   @apply mb-0
 }
 
 body.product main ul {
-  @apply md:columns-3
+  /* @apply md:columns-3 ml-0 */
 }
 
 body.product main li {
-  @apply relative mb-4 marker:text-scarlett 
+  @apply relative mb-4 marker:text-scarlett
 }
 
 body.contact address {

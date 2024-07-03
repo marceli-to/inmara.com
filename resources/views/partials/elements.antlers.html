@@ -30,10 +30,26 @@
   {{ partial:products/anchor_menu_product }}
 {{ /if }}
 
+{{ if type == 'menu_products' }}
+  {{ partial:products/menu_product }}
+{{ /if }}
+
 {{ if type == 'editor_product' }}
   {{ partial:products/editor_product }}
 {{ /if }}
 
 {{ if type == 'text_media_product' }}
   {{ partial:products/text_media_product }}
+{{ /if }}
+
+{{ if type == 'teasers_product' }}
+  {{ partial:products/teasers_products }}
+{{ /if }}
+
+{{ if type == 'product_category_title' }}
+{{ partial:products/product_category_title }}
+{{ /if }}
+
+{{ if type == 'product_detail' }}
+{{ partial:products/product_detail }}
 {{ /if }}

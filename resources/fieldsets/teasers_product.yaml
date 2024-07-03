@@ -1,0 +1,47 @@
+title: 'Product Teasers'
+fields:
+  -
+    handle: product
+    field:
+      type: replicator
+      display: Produkt
+      localizable: false
+      sets:
+        product:
+          display: Produkt
+          instructions: 'Produkt mit Bild/Link hinzufügen'
+          icon: media-image-picture-orientation
+          sets:
+            image:
+              display: Bild
+              instructions: 'Produktebild hinufügen'
+              icon: media-image-picture-orientation
+              fields:
+                -
+                  import: image
+                -
+                  handle: product_link
+                  field:
+                    max_items: 1
+                    type: entries
+                    display: Product
+                    localizable: false
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                    localizable: true
+                -
+                  handle: text
+                  field:
+                    buttons:
+                      - bold
+                      - unorderedlist
+                      - removeformat
+                      - anchor
+                    toolbar_mode: floating
+                    remove_empty_nodes: true
+                    type: bard
+                    display: Text
+                    localizable: true

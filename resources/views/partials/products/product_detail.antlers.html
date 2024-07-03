@@ -1,0 +1,26 @@
+<section class="inner mb-32 lg:mb-48">
+  <article class="sm:grid sm:grid-cols-12 sm:gap-x-16 lg:gap-x-24 product-detail">
+    <div class="sm:col-span-6 lg:col-span-4">
+      {{ partial:partials/headings/h2 title="{{ title }}" class="text-lg text-navy  mb-12 lg:mb-16" }}
+      {{ editor }}
+        {{ if type == 'text' }}
+          {{ text }}
+        {{ /if }}
+      {{ /editor }}
+    </div>
+    <div class="sm:col-span-6 lg:col-span-8">
+      <div class="sm:grid sm:grid-cols-12 sm:gap-16 lg:gap-24">
+        {{ images }}
+        <div class="sm:col-span-6">
+          {{ partial:media/image 
+            :image="image" 
+            class="w-full h-auto object-cover"
+            captionClass="pt-8 font-roboto-bold font-bold text-navy"
+            :sizes="['xl', 'lg']" 
+            preset="focal-4-3" }}
+          </div>
+        {{ /images }}
+      </div>
+    </div>
+  </article>
+</section>

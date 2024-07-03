@@ -1,0 +1,23 @@
+<section class="inner mb-32 lg:mb-48">
+  <div class="xs:grid xs:grid-cols-12 xs:gap-16 lg:gap-24">
+  {{ product }}
+    <div class="xs:col-span-6 mb-16 xs:mb-0">
+      <a 
+        href="{{ link id="{{ product_link:id }}"}}" 
+        title="{{ title }}"
+        class="group">
+        {{ partial:media/image 
+          :image="image" 
+          class="w-full h-auto object-cover"
+          :sizes="['xl', 'lg']" 
+          preset="focal-4-3" }}
+          {{ product_link }}
+        {{ partial:partials/headings/h2 title="{{ title }}" class="text-md sm:text-lg text-navy mt-8 mb-6 lg:mb-8 group-hover:text-scarlett transition-colors" }}
+        {{ if text }}
+          {{ text }}
+        {{ /if }}
+      </a>
+    </div>
+  {{ /product }}
+  </div>
+</section>

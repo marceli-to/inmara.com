@@ -72,12 +72,6 @@ tabs:
                       fields:
                         -
                           import: news
-                    file_protected:
-                      display: 'File (Download, geschützt)'
-                      icon: login-key-2
-                      fields:
-                        -
-                          import: file_protected
                     downloads:
                       display: Downloads
                       icon: download-arrow-down
@@ -89,12 +83,33 @@ tabs:
                   icon: addon-boxes-stack
                   sets:
                     teaser_product:
-                      display: Produkteteaser
+                      display: 'Teaser Produkt'
                       instructions: 'Produkteteaser für Startseite.'
                       icon: text-formatting-wrap-image-right
                       fields:
                         -
                           import: teaser_product
+                    anchor_menu_products:
+                      display: 'Ankermenu Produkte'
+                      instructions: 'Ankermenü auf Produktseite hinzufügen.'
+                      icon: link
+                      fields:
+                        -
+                          import: anchor_menu_product
+                    editor_product:
+                      display: 'Editor Produkte'
+                      instructions: 'Editor für Produktinformationen'
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: editor_product
+                    text_media_product:
+                      display: 'Text/Media Produkte'
+                      instructions: 'Text/Medien Element hinzufügen'
+                      icon: media-news-paper
+                      fields:
+                        -
+                          import: text_media_product
   seo:
     display: SEO
     sections:

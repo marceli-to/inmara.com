@@ -1,0 +1,9 @@
+title: 'Product Anchor Menu'
+fields:
+  -
+    handle: anchors
+    field:
+      type: array
+      display: Anchors
+      instructions: 'Set the anchors to the sections of the page as key/value pairs. The key must be the anchor set on the section, the value is the displayed link name.'
+      localizable: true

@@ -8,11 +8,11 @@ fields:
         - h3
         - removeformat
         - anchor
-        - lead
-        - subinfo
         - nobr
         - unorderedlist
         - code
+        - bold
+        - highlight
       toolbar_mode: floating
       remove_empty_nodes: true
       type: bard

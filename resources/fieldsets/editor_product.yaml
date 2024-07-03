@@ -1,0 +1,33 @@
+title: 'Product Editor'
+fields:
+  -
+    handle: editor
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - removeformat
+        - anchor
+        - nobr
+        - highlight
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      type: bard
+      display: Editor
+      localizable: true
+      sets:
+        button:
+          display: Button
+          instructions: 'Button hinzufügen'
+          icon: link
+          sets:
+            button:
+              display: Button
+              instructions: 'Button hinzufügen'
+              icon: link
+              fields:
+                -
+                  import: button_primary

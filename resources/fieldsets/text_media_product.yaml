@@ -1,0 +1,57 @@
+title: 'Product Text/Media'
+fields:
+  -
+    handle: theme
+    field:
+      options:
+        dark: Dark
+        light: Light
+      default: dark
+      type: select
+      display: Theme
+      localizable: false
+  -
+    handle: anchor_slug
+    field:
+      generate: false
+      type: slug
+      display: Ankername
+      localizable: true
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      localizable: true
+  -
+    import: editor_product
+  -
+    handle: media
+    field:
+      type: replicator
+      display: Media
+      localizable: false
+      sets:
+        media:
+          display: Media
+          icon: media-image-picture-orientation
+          sets:
+            image:
+              display: Bild
+              icon: media-image-picture-orientation
+              fields:
+                -
+                  import: image
+            video:
+              display: Video
+              instructions: 'Video hinzufügen'
+              icon: media-webcam-video
+              fields:
+                -
+                  import: image
+                -
+                  handle: video_url
+                  field:
+                    type: text
+                    display: 'Video URL'
+                    localizable: false

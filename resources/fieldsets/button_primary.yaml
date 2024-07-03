@@ -1,0 +1,17 @@
+title: 'Button Primary'
+fields:
+  -
+    handle: text
+    field:
+      type: text
+      display: Text
+      localizable: false
+  -
+    handle: link
+    field:
+      collections:
+        - pages
+      container: assets
+      type: link
+      display: Link
+      localizable: false

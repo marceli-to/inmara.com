@@ -18,6 +18,7 @@ fields:
       options:
         contact: Contact
         privacy: Privacy
+        product: Product
       type: select
       display: 'Page class'
       localizable: false

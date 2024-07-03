@@ -7,16 +7,23 @@ function loadMapboxScript() {
 }
 
 function init() {
-  initializeMap({
-    lat: 47.369353597535664,
-    lng: 8.770786384312277,
-    container: 'map-pfaeffikon',
-  });
-  initializeMap({
-    lat: 51.74313916483192,
-    lng: 4.552519869149755,
-    container: 'map-strijen',
-  });
+
+  const mapPfaeffikon = document.getElementById('map-pfaeffikon');
+  const mapStrijen = document.getElementById('map-strijen');
+  if (mapPfaeffikon) {
+    initializeMap({
+      lat: 47.369353597535664,
+      lng: 8.770786384312277,
+      container: 'map-pfaeffikon',
+    });
+  }
+  if (mapStrijen) {
+    initializeMap({
+      lat: 51.74313916483192,
+      lng: 4.552519869149755,
+      container: 'map-strijen',
+    });
+  }
 }
 
 // Define a function to initialize the map

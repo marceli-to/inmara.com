@@ -107,13 +107,13 @@ return [
         // ],
 
         // 'three_columns' => [
-        //     'type' => 'div',
-        //     'name' => 'Three Columns',
-        //     'ident' => '❙❙❙',
-        //     'icon' => null,
-        //     'class' => 'three-columns',
-        //     'cp_css' => 'column-count: 3; column-gap: 16px',
-        //     'cp_badge' => true,
+        //   'type' => 'div',
+        //   'name' => 'Three Columns',
+        //   'ident' => '❙❙❙',
+        //   'icon' => null,
+        //   'class' => 'three-columns',
+        //   'cp_css' => 'column-count: 3; column-gap: 16px',
+        //   'cp_badge' => true,
         // ],
 
     ],

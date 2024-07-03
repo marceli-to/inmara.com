@@ -1,0 +1,45 @@
+<section class="pb-32 lg:pb-48 pt-20 lg:pt-36 first-of-type:pt-0 last-of-type:pb-0 {{ theme == 'dark' ? 'bg-navy text-white' : ''}} product-text-media">
+  <a class="scroll-mt-[160px]" name="{{ anchor_slug }}"></a>
+  <article class="inner">
+    {{ partial:partials/headings/h2 title="{{ title }}" class="text-lg mb-8 lg:mb-12 {{ theme == 'dark' ? 'text-white' : 'text-navy'}}" }}
+    <div class="sm:grid sm:grid-cols-12 sm:gap-x-16 lg:gap-x-24">
+      <div class="sm:col-span-8 md:col-span-8 mb-24 sm:mb-0">
+        {{ editor }}
+          {{ if type == 'text' }}
+            {{ text }}
+          {{ /if }}
+          {{ if type == 'button' }}
+            {{ partial:buttons/primary 
+              link="{{ link }}" 
+              link_text="{{ text }}"
+              target="_blank"
+              class="mt-8 sm:mt-0 text-white bg-scarlett hover:bg-navy transition-all"}}
+          {{ /if }}
+        {{ /editor }}
+      </div>
+      <div class="sm:col-span-4 md:col-span-4 flex flex-col space-y-20 lg:space-y-32">
+        {{ media }}
+          {{ if type == 'image' }}
+          {{ partial:media/image 
+            :image="image" 
+            class="w-full h-auto object-cover"
+            :sizes="['lg']" }}
+          {{ /if }}
+          {{ if type == 'video' }}
+            <a 
+              href="{{ video_url}}" 
+              target="_blank"
+              class="relative">
+              {{ partial:icons/youtube class="block w-64 h-auto absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" }}
+              {{ partial:media/image 
+                :image="image" 
+                class="w-full h-auto object-cover"
+                :sizes="['lg']"
+                preset="focal-16-10" }}
+            </a>
+          {{ /if }}
+        {{ /media}}
+      </div>
+  </div>
+</article>
+</section>

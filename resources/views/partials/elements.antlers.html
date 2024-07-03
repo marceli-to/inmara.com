@@ -25,3 +25,15 @@
 {{ if type == 'contact_items' }}
   {{ partial:elements/contact_items }}
 {{ /if }}
+
+{{ if type == 'anchor_menu_products' }}
+  {{ partial:products/anchor_menu_product }}
+{{ /if }}
+
+{{ if type == 'editor_product' }}
+  {{ partial:products/editor_product }}
+{{ /if }}
+
+{{ if type == 'text_media_product' }}
+  {{ partial:products/text_media_product }}
+{{ /if }}

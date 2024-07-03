@@ -1,0 +1,10 @@
+<section class="inner mb-32 lg:mb-48">
+  <article class="max-w-xl flex flex-wrap gap-8 md:gap-12">
+    {{ foreach:anchors }}
+      {{ partial:buttons/primary 
+        link="#{{ key }}" 
+        link_text="{{ value }}"
+        class="text-white bg-scarlett hover:bg-navy transition-all"}}
+  {{ /foreach:anchors }}
+  </article>
+</section>

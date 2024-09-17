@@ -22,6 +22,6 @@ fields:
                 -
                   handle: caption
                   field:
-                    type: text
+                    type: textarea
                     display: Caption
                     localizable: false

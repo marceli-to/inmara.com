@@ -47,7 +47,7 @@ footer a {
 }
 
 .inner {
-  @apply max-w-5xl mx-auto w-full px-16 sm:px-24;
+  @apply max-w-6xl mx-auto w-full px-16 sm:px-24;
 }
 
 .highlight {
@@ -62,10 +62,6 @@ body.product main h3 {
 body.product main .product-text-media h3,
 body.product main .product-detail h3 {
   @apply mb-0
-}
-
-body.product main ul {
-  /* @apply md:columns-3 ml-0 */
 }
 
 body.product main li {

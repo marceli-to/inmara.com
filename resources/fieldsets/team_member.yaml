@@ -36,15 +36,5 @@ fields:
       max_files: 1
       container: assets
       type: assets
-      display: 'Image (Landscape)'
+      display: Image
       localizable: false
-      width: 50
-  -
-    handle: image_portrait
-    field:
-      max_files: 1
-      container: assets
-      type: assets
-      display: 'Image (Portrait)'
-      localizable: false
-      width: 50

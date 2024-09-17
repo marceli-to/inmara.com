@@ -1,11 +1,11 @@
-<nav class="mt-30 md:mt-0 text-sm {{ class }}">
-  <ul class="flex items-center leading-none space-x-8 lg:space-x-10">
+<nav class="mt-30 md:mt-0 text-md {{ class }}">
+  <ul class="flex items-center leading-none -ml-8 md:-ml-0">
     {{ locales current_first="false" }}
       <li>
         <a 
           href="{{ permalink }}" 
           title="{{ locale:locale }}"
-          class="{{ site:short_locale == locale:locale ? 'font-roboto-bold font-bold text-scarlett' : '' }}">
+          class="px-8 lg:px-10 hover:text-scarlett {{ site:short_locale == locale:locale ? 'font-roboto-bold font-bold text-scarlett' : '' }}">
           {{ locale:locale | substr:0:1 }}
         </a>
       </li>

@@ -38,6 +38,7 @@ export default {
         'md':  '1.125rem',     // 18px
         'lg':  '1.5rem',       // 24px
         'xl':  '2.5rem',       // 40px
+        '2xl': '3rem',         // 48px
       },
 
       textUnderlineOffset: {

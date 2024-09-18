@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-a186960b.css",
+    "file": "assets/app-cd365636.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -14,11 +14,11 @@
     "src": "resources/js/app.js"
   },
   "resources/patterns/pattern-bottom.png": {
-    "file": "assets/pattern-bottom-1bbebfbb.png",
+    "file": "assets/pattern-bottom-a98962df.png",
     "src": "resources/patterns/pattern-bottom.png"
   },
   "resources/patterns/pattern-top.png": {
-    "file": "assets/pattern-top-dcc3d506.png",
+    "file": "assets/pattern-top-66f7c604.png",
     "src": "resources/patterns/pattern-top.png"
   }
 }

@@ -19,15 +19,55 @@ fields:
       display: Editor
       localizable: true
       sets:
-        button:
-          display: Button
-          instructions: 'Button hinzufügen'
-          icon: link
+        elements:
+          display: Elemente
+          instructions: 'Elemente hinzufügen'
+          icon: addon-boxes-stack
           sets:
-            button:
-              display: Button
-              instructions: 'Button hinzufügen'
-              icon: link
+            downloads:
+              display: Downloads
+              instructions: 'Downloads hinzufügen'
+              icon: download-arrow-down
               fields:
                 -
-                  import: button_primary
+                  handle: download
+                  field:
+                    collapse: true
+                    type: replicator
+                    display: Download
+                    localizable: false
+                    sets:
+                      neue_set-gruppe:
+                        display: 'Neue Set-Gruppe'
+                        sets:
+                          download:
+                            display: Download
+                            instructions: 'Download hinzufügen'
+                            icon: download-arrow-down
+                            fields:
+                              -
+                                handle: description
+                                field:
+                                  type: text
+                                  display: Beschreibung
+                                  localizable: false
+                              -
+                                handle: pdf
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  folder: products
+                                  type: assets
+                                  display: PDF
+                                  localizable: false
+                                  width: 50
+                              -
+                                handle: file
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  folder: products
+                                  type: assets
+                                  display: '3D-File (Step)'
+                                  localizable: false
+                                  width: 50

@@ -6,6 +6,35 @@
         {{ if type == 'text' }}
           {{ text }}
         {{ /if }}
+        {{ if type == 'downloads' }}
+          <h3>Downloads</h3>
+          <table class="w-full border-t border-t-gray-300 mt-10 !text-xxs">
+            <tbody>
+            {{ download }}
+              <tr class="border-b border-b-gray-300">
+                <td class="py-5 pr-12">
+                  {{ description }}
+                </td>
+                
+                <td class="py-5 text-scarlett font-roboto-bold font-bold text-right">
+                  {{ if pdf }}
+                    <a href="{{ pdf }}" target="_blank" class="hover:underline">
+                      {{ pdf:filename }}.{{ pdf:extension }}
+                    </a>
+                  {{ /if }}
+                </td>
+                <td class="py-5 text-scarlett font-roboto-bold font-bold text-right">
+                  {{ if file }}
+                  <a href="{{ file }}" target="_blank" class="hover:underline">
+                    {{ file:filename }}.{{ file:extension }}
+                    </a>
+                  {{ /if }}
+                </td>
+              </tr>
+            {{ /download }}
+            </tbody>
+          </table>
+        {{ /if }}
       {{ /editor }}
     </div>
     <div class="sm:col-span-6 lg:col-span-8">
